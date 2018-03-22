@@ -1,0 +1,16 @@
+sudo: required
+dist: trusty
+language: python
+python:
+  - "2.7"
+before_install:
+    - sudo apt-get install -qq python-numpy python-scipy
+install:
+  - pip install https://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-1.0.0-cp27-none-linux_x86_64.whl
+  - pip install tqdm
+  - pip install matplotlib
+  - pip install stl
+  - pip install trimesh
+  - pip install scikit-image
+script:
+  - "python src/3dgan_mit.py 1"
