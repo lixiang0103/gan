@@ -6,4 +6,5 @@ if __name__ == '__main__':
     b = np.array([[[2,2,2],[2,2,2],[2,2,2]],[[2,2,2],[2,2,2],[2,2,2]]])
     result = np.append(a, b,axis = 0)
     print result.shape
-    print "hello world"
+    print "the first modification"
+    print "the second modification"
